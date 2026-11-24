@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(219, 253, 253, 0.404);
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #111827;
+}
+
+/* Cabeçalho */
+.topo {
+    background-color: #55A0C9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.marca h1,
+.marca p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0.2rem 0;
+}
+
+.marca a {
+    display: inline-flex;
+    align-items: center;
+}
+
+.marca img {
+    height: 68px;
+    width: auto;
+    display: block;
+    background-color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    font-size: 1.05rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* Área principal */
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    flex: 1;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    margin: 2rem 0;
+}
+
+/* Seção de destaque */
+.secao-destaque {
+    background-color: rgb(2, 47, 87);
+    max-width: 750px;
+    margin: 1.5rem auto;
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    box-shadow: 0 13px 27px -5px rgba(2, 47, 87, 0.25);
+}
+
+.secao-destaque h1 {
+    margin-top: 0;
+}
+
+.secao-destaque a {
+    display: inline-block;
+    margin-top: 0.75rem;
+    background-color: rgb(203, 249, 255);
+    color: rgb(2, 47, 87);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.secao-destaque a:hover {
+    background-color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* Sobre e colunas */
+.secao-sobre {
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.separe {
+    display: flex;
+    gap: 24px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    flex-wrap: wrap;
+}
+
+.p1,
+.p2 {
+    flex: 1;
+    min-width: 280px;
+}
+
+.p2 ol {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+/* Cards, citações e FAQ */
+.cards {
+    background-color: rgb(238, 237, 230);
+    border-radius: 10px;
+    box-shadow: -6px 0px 0px 0px rgb(83, 100, 80);
+    margin: 12px 0;
+    padding: 14px 16px;
+}
+
+.cards h3,
+.cards p {
+    margin: 0.25rem 0;
+}
+
+blockquote {
+    background-color: #ffffff;
+    margin: 12px 0;
+    padding: 14px 18px;
+    border-radius: 10px;
+    border-left: 4px solid #55A0C9;
+}
+
+blockquote p {
+    margin: 0 0 6px 0;
+}
+
+details {
+    background-color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.faq-item {
+    background-color: #ffffff;
+    padding: 1.25rem 1.5rem;
+    border-radius: 10px;
+    border-left: 5px solid #55A0C9;
+    margin-bottom: 1rem;
+}
+
+.pergunta {
+    font-weight: 600;
+    color: rgb(2, 47, 87);
+    margin: 0 0 0.4rem 0;
+}
+
+.resposta {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Página Sobre Mim */
+.secAbout {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+    border-left: 6px solid #55A0C9;
+    box-shadow: 0 8px 20px rgba(2, 47, 87, 0.08);
+}
+
+.secAbout h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: rgb(2, 47, 87);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.secAbout span {
+    display: block;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    white-space: pre-line;
+}
+
+/* Formulário */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    max-width: 420px;
+    padding: 8px 10px;
+    margin-top: 4px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+form button {
+    background-color: #55A0C9;
+    color: #000000;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3f8ab5;
+    color: #ffffff;
+}
+
+/* Rodapé */
+.pedacin1F {
+    width: 100%;
+    background-color: #55A0C9;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 2rem 7rem 1.2rem 7rem;
+    margin-top: auto;
+}
+
+.pedacin1F h2,
+.pedacin1F h1 {
+    text-align: center;
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: 1.4rem;
+}
+
+.info-rodape {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.info-rodape p,
+.pedacin1F p {
+    margin: 0.25rem 0;
+}
+
+/* Celular */
+@media (max-width: 768px) {
+    .topo,
+    .pedacin1F {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .secAbout {
+        padding: 1.25rem;
+    }
+}
